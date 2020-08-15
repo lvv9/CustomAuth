@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ticket</title>
+</head>
+<body>
+    <h3>Login with Ticket</h3>
+    <form th:action='${path}' method='POST'>
+        <table>
+            <tr>
+                <td>Ticket:</td>
+                <td><input type='text' name='ticket' /></td>
+            </tr>
+            <tr>
+                <td>ClientId:</td>
+                <td><input type='text' name='clientid' /></td>
+            </tr>
+            <tr>
+                <td>ServerId:</td>
+                <td><input type='text' name='serverid' /></td>
+            </tr>
+            <tr>
+                <td>URI:</td>
+                <td><input type='text' name='uri' /></td>
+            </tr>
+            <tr>
+                <td>ClientIp:</td>
+                <td><input type='text' name='clientip' /></td>
+            </tr>
+            <tr>
+                <td colspan='2'><input type="submit"
+                    value="Login" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

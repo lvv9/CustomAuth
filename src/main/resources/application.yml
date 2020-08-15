@@ -1,0 +1,26 @@
+ticket:
+  path: /etransfer/ticket
+  page: /etransfer/login
+  service: false
+  argmap:
+    ticket: null
+    clientid: null
+    serverid: null
+    uri: null
+    clientip: null
+loginpage: true
+token:
+  names:
+    principalname: clientid
+    credentialsname: ticket
+logging:
+  level:
+    root: debug
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+server:
+    session:
+      timeout: 120
+      maximumsessions: 1
